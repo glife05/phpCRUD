@@ -6,7 +6,7 @@ DEFINE('DB_PWD','P@ss123');
 DEFINE('DB_NAME','company');
 
 
-$connect=mysqli_connect(DB_HOST,DB_USER,DB_PWD,DB_NAME);
+$connect=mysqli_connect(DB_HOST,DB_USER,DB_PWD,DB_NAME) or die($connect);
 
 /*if (!$connect) {
 	# code...

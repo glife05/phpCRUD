@@ -7,8 +7,8 @@
 	 	# code...
 		
 	 	//Security measure
-	 	 $name= $_POST['name'];
-	 	 $email=$_POST['email'];
+	 	 $name=mysqli_real_escape_string($connect,$_POST['name']);
+	 	 $email=mysqli_real_escape_string($_POST['email']);
 
 	 	 $sqlInsert="INSERT INTO people(name,email)VALUES('$name','$email')";
 
